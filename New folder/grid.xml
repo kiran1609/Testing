@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Selenium grid" thread-count="4" verbose="1">
+    <test name="seleniumgrid">
+    <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="gridpack.node1"/>
+            <class name="gridpack.node2"/>
+            <class name="gridpack.node3"/>
+            <class name="gridpack.node4"/>
+          </classes>
+    </test>
+ </suite>
